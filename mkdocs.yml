@@ -1,0 +1,9 @@
+site_name: Touch Encoder Documentation
+nav:
+  - Comm Protocol:
+    - SAE J1939: comm_protocols/sae_j1939.md
+    - HID USB: comm_protocols/hidusb.md
+  - Update:
+    - Live Update: live_update.md
+
+theme: readthedocs
