@@ -117,11 +117,7 @@
 <h1 id="2-j1939-communications">2. J1939 Communications</h1>
 <h2 id="21-message-header-description">2.1 Message Header Description</h2>
 <p>The figure below illustrates the format of the CAN message ID. A brief description of each field follows.</p>
-<figure>
-  <img src="images/canj1939_id_illustration.jpg" height="100%" width="100%" alt="Figure 1">
-  <figcaption>J1939 can id</figcaption>
-</figure>
-
+<p><img alt="j1939-can-id" src="../images/canj1939_id_illustration.jpg" title="J1939 can id" /></p>
 <h3 id="211-priority">2.1.1 Priority</h3>
 <p>This 3-bit field is used to define the priority during arbitration. 0 is the highest priority and is usually associated with high-speed control messages. Low priority is used for non-critical configuration and information messages. The lowest priority value is 7.</p>
 <h3 id="212-data-page-dp">2.1.2 Data Page (DP)</h3>
@@ -695,11 +691,7 @@ Direction – Receive
 <pre><code>ID=18EFF221, LEN=8, Data=0x11, 0x03, 0x02, 0xF4, 0x01, 0x00, 0x02, 0xFF
 </code></pre>
 <h3 id="311-multi-value-data-example">3.1.1 Multi-Value Data Example</h3>
-<figure>
-  <img src="images/multi_value_right_example.jpg" height="75%" width="75%" alt="Figure 1">
-  <figcaption>Multi-value Widget</figcaption>
-</figure>
-
+<p><img alt="multi-value-widget" src="images/multi_value_right_example.png" title="Multi-value Widget" /></p>
 <p><strong>Example</strong>: The figure above displays an example of a multi-value widget. The dynamic text object is designated at Value ID #2. The lighted icon object is designated as Value ID #3. Below is the sequence of messages to turn on the top lighted icon and change the dynamic text to 100.</p>
 <pre><code>ID=18EFF221, LEN=8, Data=0x11, 0x03, 0x04, 0x01, 0x00, 0x00, 0x06, 0xFF
 
