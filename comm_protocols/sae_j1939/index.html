@@ -1146,56 +1146,7 @@ Data Length – 3
 </tbody>
 </table>
 <p>The following are the supported PGN&#39;s that can be requested from the Touch Encoder. If the request is unsupported, the device responds with a NACK (Refer to J1939-21).</p>
-<h3 id="421-ecu-identification-information-coming-soon">4.2.1 ECU Identification Information (COMING SOON)</h3>
-<pre><code>Priority – 0b110 (6)
-R/DP – 0b00 (0)
-PF – 0xFD (253), ECU ID, Proprietary B PDU2 Format
-PS – 0xC5 (197)?
-SrcAddr – 0xF2 (242), i.e. Touch Encoder source address
-ID – 0x18FDC5F2
-Direction – Transmit
-Data Length – Variable
-Transmission Rate – Upon Request
-Multi Packet Transerred – Yes, BAM only
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>Start</th>
-<th>Length</th>
-<th>Desc.</th>
-<th>Values *</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>&lt;=64</td>
-<td>ECU Part Number</td>
-<td>Ex. "3KYY1001-1"</td>
-</tr>
-<tr>
-<td>Variable</td>
-<td>&lt;=64</td>
-<td>ECU Serial Number</td>
-<td>Ex. "123456"</td>
-</tr>
-<tr>
-<td>Variable</td>
-<td>&lt;=64</td>
-<td>ECU Location</td>
-<td>Ex. "CAB"</td>
-</tr>
-<tr>
-<td>Variable</td>
-<td>&lt;=64</td>
-<td>ECU Type</td>
-<td>Ex. "KEYPAD"</td>
-</tr>
-</tbody>
-</table>
-<p>*All fields "*" ASCII delimited</p>
-<h3 id="422-software-identification">4.2.2 Software Identification</h3>
+<h3 id="421-software-identification">4.2.1 Software Identification</h3>
 <pre><code>Priority – 0b110 (6)
 R/DP – 0b00 (0)
 PF – 0xFE (254), SW ID, Proprietary B PDU2 Format
@@ -1313,68 +1264,6 @@ Transmission Rate – Upon appropriate response
 <td>3 Bytes</td>
 <td>Parameter Group being Acknowledged</td>
 <td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="revision-history">Revision History</h3>
-<table>
-<thead>
-<tr>
-<th>Revision</th>
-<th>Date</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>2/19/2018</td>
-<td>OriginalRelease</td>
-</tr>
-<tr>
-<td>B</td>
-<td>2/27/2018</td>
-<td>Changes to the example message in section 2.5.2</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Rephrased the meaning of Byte 7 in section 2.5.2</td>
-</tr>
-<tr>
-<td>C</td>
-<td>3/6/2018</td>
-<td>Changed Byte message in section 3.1</td>
-</tr>
-<tr>
-<td>D</td>
-<td>07/25/2018</td>
-<td>Changed pinout on M12 to reflect production pinout</td>
-</tr>
-<tr>
-<td>E</td>
-<td>8/24/2018</td>
-<td>Added Programming Harness Information</td>
-</tr>
-<tr>
-<td>F</td>
-<td>10/25/2018</td>
-<td>Updated Run/Programming Mode Schematics</td>
-</tr>
-<tr>
-<td>G</td>
-<td>12/7/2018</td>
-<td>Updated Touch Encoder Image</td>
-</tr>
-<tr>
-<td>H</td>
-<td>2/12/2019</td>
-<td>Added Command, Multi-value, and Display Code Information</td>
-</tr>
-<tr>
-<td>I</td>
-<td>3/10/2020</td>
-<td>Added Mode Code Information</td>
 </tr>
 </tbody>
 </table>
